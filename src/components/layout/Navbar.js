@@ -6,11 +6,11 @@ const Navbar = () => {
     <React.Fragment>
         <header>
             <div className="container">
-                <NavLink to='/' id="logo">GLUG PACE</NavLink>
+                <NavLink to='/glugpace/' id="logo">GLUG PACE</NavLink>
                 <ul>
-                    <li><NavLink to='/events'>Events</NavLink></li>
-                    <li><NavLink to='/blog'>Blog</NavLink></li>
-                    <li><NavLink to='/team'>Team</NavLink></li>
+                    <li><NavLink to='/glugpace/events'>Events</NavLink></li>
+                    <li><NavLink to='/glugpace/blog'>Blog</NavLink></li>
+                    <li><NavLink to='/glugpace/team'>Team</NavLink></li>
                 </ul>
             </div>
         </header>

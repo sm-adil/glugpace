@@ -12,7 +12,7 @@ const Posts = ({posts}) => {
                     <img src={image} alt="post" />
                 </div>
                 <div className="blog-post-data">
-                    <Link to={'/blog/' + post.id}>
+                    <Link to={'/glugpace/blog/' + post.id}>
                         <p className="blog-post-title">{post.title}</p>
                     </Link>
                     <p className="blog-post-desc">Created by {post.username}</p>

@@ -18,12 +18,12 @@ class App extends Component {
         <div className="App">
         <Navbar />
           <Switch>
-            <Route exact path="/" component = { Home }></Route>
-            <Route exact path="/events" component = { EventList }></Route>
-            <Route exact path="/events/:event_id" component = { ReadEvent }></Route>
-            <Route exact path="/blog" component = { BlogList }></Route>
-            <Route exact path="/blog/:post_id" component = { ReadPost }></Route>
-            <Route exact path="/team" component = { TeamList }></Route>
+            <Route exact path="/glugpace/" component = { Home }></Route>
+            <Route exact path="/glugpace/events" component = { EventList }></Route>
+            <Route exact path="/glugpace/events/:event_id" component = { ReadEvent }></Route>
+            <Route exact path="/glugpace/blog" component = { BlogList }></Route>
+            <Route exact path="/glugpace/blog/:post_id" component = { ReadPost }></Route>
+            <Route exact path="/glugpace/team" component = { TeamList }></Route>
           </Switch>          
           <Footer />
         </div>

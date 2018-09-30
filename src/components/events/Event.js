@@ -11,7 +11,7 @@ const Event = ({events}) => {
                 <div className="event-details">
                     <img className="event-image" src={image} alt="event" />
                     <div className="event-desc">
-                        <Link to={'/events/' + event.id}>
+                        <Link to={'/glugpace/events/' + event.id}>
                             <p className="event-title">{event.title}</p>
                         </Link>
                     </div>
