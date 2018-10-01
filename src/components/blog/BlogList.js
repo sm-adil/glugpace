@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import postFile from './PostFile.json'
-import Posts from './Posts'
+import Posts from './Posts';
+
+const posts = require('./PostFile').posts;
 
 class BlogList extends Component {
   state = {
-    posts: postFile
+    posts: posts
   }
   render() {
     return (
