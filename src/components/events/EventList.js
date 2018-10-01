@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import eventFile from './EventFile.json'
 import Event from './Event'
+
+const events = require('./EventFile').events;
 
 class EventList extends Component {
   state = {
-    events: eventFile
+    events: events
   }
   render() {
     return (

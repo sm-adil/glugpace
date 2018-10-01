@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import eventFile from './EventFile.json'
+const events = require('./EventFile').events; //Always use this standard
 
 class ReadEvent extends Component {
   state = {
@@ -7,20 +7,19 @@ class ReadEvent extends Component {
   }
 
   componentDidMount() {
-      // Get the post id from route   
-    //   let post_id = this.props.match.params.post_id;
-      
-    eventFile.filter(eventData => {
-        // Need some functionality to filter single event and update the state
-        console.log(eventData)
+      // Get the event id from route   
+      let event_id = Number(this.props.match.params.event_id);
+      let selectedEvent;
+        events.forEach(event => {
+            if (event.id === event_id) {
+                selectedEvent = event;
+            }
+        });
         return (
-             this.setState({
-                event: eventData
+            this.setState({
+                event:selectedEvent
             })
         )
-    })
-           
-    
   }
   render() {
       const event = this.state.event ? (
