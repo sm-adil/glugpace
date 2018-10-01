@@ -8,10 +8,10 @@ class ReadPost extends Component {
 
     componentDidMount() {
         // Get the post id from route   
-        let post_id = this.props.match.params.post_id;
+        let post_id = Number(this.props.match.params.post_id);
         let selectedPost;
         posts.forEach(post => {
-            if (post.id == post_id) {
+            if (post.id === post_id) {
                 selectedPost = post;
             }
         });
