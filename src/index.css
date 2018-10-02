@@ -11,12 +11,17 @@ img {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
 header {
+    height: min-content;
     background: #fff;
     line-height: 1rem;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12);
@@ -25,10 +30,6 @@ header {
     right: 0;
     top: 0;
     z-index: 100;
-}
-
-a {
-    text-decoration: none;
 }
 
 header .container {
@@ -79,11 +80,10 @@ ul li a.active {
 }
 
 #section-one {
-    background: url(./components/layout/images/bg.jpeg);
+    background: #9f8bbe url(./components/layout/images/bg.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 #section-one .container {
@@ -97,18 +97,19 @@ ul li a.active {
     color: #fff;
     margin: 20px 0 10px;
     font-size: 2.5em;
-    font-weight: 400;
-    line-height: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
 }
 
 #hero-content p {
-    color: #f1f3f5;
+    /* color: #f1f3f5; */
+    color: #454646;
     font-weight: 400;
 }
 
 #hero-image {
     width: 250px;
-    height: auto;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -121,7 +122,7 @@ ul li a.active {
     margin: 20px 0 10px;
     font-size: 2.5em;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 1.2em;
 }
 
 #section-two .container {
@@ -168,10 +169,12 @@ ul li a.active {
     font-size: 2em;
     font-weight: 400;
     line-height: 1em;
+    color: #3c4043;
 }
 
 .blog-post-desc {
     font-weight: 300px;
+    color: #3c4043;
 }
 
 .event-container {
@@ -193,12 +196,14 @@ ul li a.active {
 
 .event-desc {
     padding: 0.5em 1em;
+    color: #3c4043;
 }
 
 .event-title {
     font-size: 1.3em;
     font-weight: 400;
     line-height: 1em;
+    color: #3c4043;
 }
 
 .team-container {
@@ -277,7 +282,7 @@ ul li a.active {
     justify-content: space-between;
 }
 
-#footer-content .container .footer-box{
+#footer-content .container .footer-box {
     min-width: 33.3%;
     line-height: 1.5em;
 }
@@ -332,10 +337,22 @@ ul li a.active {
     }
 
     #section-one {
-        padding-top: 7em;
-        background-attachment: scroll;        
+        padding-top: 7em;       
     }
 
+    #hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    #hero-content p {
+        color: #f1f3f5;
+        font-weight: 300;
+    }
+    
+    .hero-heading {
+        font-size: 1.8em;
+    }
+    
     #hero-image {
         width: 100px;
         height: auto;
@@ -364,5 +381,16 @@ ul li a.active {
 
     .blog-post-desc {
         font-weight: 200;
+    }
+
+    .data-content {
+        margin-top: 1em;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    header {
+        height: min-content;
     }
 }

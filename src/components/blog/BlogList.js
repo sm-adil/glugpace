@@ -7,6 +7,7 @@ class BlogList extends Component {
   state = {
     posts: posts
   }
+  
   render() {
     return (
       <div className="padding container">

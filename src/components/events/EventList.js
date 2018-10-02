@@ -7,6 +7,7 @@ class EventList extends Component {
   state = {
     events: events
   }
+  
   render() {
     return (
       <div className="padding container">

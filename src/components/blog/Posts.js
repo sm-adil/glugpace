@@ -5,19 +5,18 @@ import image from '../layout/images/chars.png'
 const Posts = ({posts}) => {
   const postList = posts.length ? (
     posts.map(post => {
-        console.log(post)
         return (
-            <div className="blog-card" key={post.id}>
-                <div className="blog-post-image">
-                    <img src={image} alt="post" />
+            <Link to={'/glugpace/blog/' + post.id}>
+                <div className="blog-card" key={post.id}>
+                    <div className="blog-post-image">
+                        <img src={image} alt="post" />
+                    </div>
+                    <div className="blog-post-data">
+                            <p className="blog-post-title">{post.title}</p>
+                        <p className="blog-post-desc">Published by {post.username}</p>
+                    </div>
                 </div>
-                <div className="blog-post-data">
-                    <Link to={'/glugpace/blog/' + post.id}>
-                        <p className="blog-post-title">{post.title}</p>
-                    </Link>
-                    <p className="blog-post-desc">Created by {post.username}</p>
-                </div>
-            </div>
+            </Link>
         )
     })
   ) : (
