@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image from '../layout/images/students.png'
 
 const Event = ({events}) => {
   const eventList = events.length ? (
@@ -9,7 +8,7 @@ const Event = ({events}) => {
             <div className="event-card" key={event.id}>
                 <Link to={'/glugpace/events/' + event.id}>                
                     <div className="event-details">
-                        <img className="event-image" src={image} alt="event" />
+                        <img className="event-image" src={require(`${event.imageURl}`)} alt="event" />
                         <div className="event-desc">
                            <p className="event-title">{event.title}</p>
                         </div>

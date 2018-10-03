@@ -24,6 +24,7 @@ class ReadEvent extends Component {
   render() {
       const event = this.state.event ? (
         <div className="data-content">
+            <img className="data-image" src={require(`${this.state.event.imageURl}`)} alt="event" />
             <h4 className="data-heading">{this.state.event.title}</h4>
             <p>{this.state.event.body}</p>
         </div>

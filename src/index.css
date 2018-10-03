@@ -157,11 +157,11 @@ ul li a.active {
 
 .blog-post-image {
     width: 30%;
-    height: auto;
+    max-height: 40%;
 }
 
 .blog-post-data {
-    padding: 0 0.5em;
+    padding: 0 1em;
 }
 
 .blog-post-title {

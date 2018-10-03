@@ -24,6 +24,7 @@ class ReadPost extends Component {
     render() {
         const post = this.state.post ? (
             <div className="data-content">
+                <img className="data-image" src={require(`${this.state.post.imageURl}`)} alt="post" />
                 <h4 className="data-heading">{this.state.post.title}</h4>
                 <p>{this.state.post.body}</p>
             </div>

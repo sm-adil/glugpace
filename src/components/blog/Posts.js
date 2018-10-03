@@ -1,22 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image from '../layout/images/chars.png'
 
 const Posts = ({posts}) => {
   const postList = posts.length ? (
     posts.map(post => {
         return (
-            <Link to={'/glugpace/blog/' + post.id}>
-                <div className="blog-card" key={post.id}>
+            <div key={post.id}>
+                <Link to={'/glugpace/blog/' + post.id}>
+                <div className="blog-card" >
                     <div className="blog-post-image">
-                        <img src={image} alt="post" />
+                        <img src={require(`${post.imageURl}`)} alt="post" />
                     </div>
                     <div className="blog-post-data">
                             <p className="blog-post-title">{post.title}</p>
                         <p className="blog-post-desc">Published by {post.username}</p>
                     </div>
                 </div>
-            </Link>
+                </Link>
+            </div>
         )
     })
   ) : (
