@@ -396,8 +396,7 @@ ul li a.active {
     }
 
     .center {
-        padding-top: 10em;
-        padding-bottom: 10em;
+        padding: 10em 0 10em 0;
     }
 }
 
