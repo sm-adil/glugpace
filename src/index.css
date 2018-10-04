@@ -394,6 +394,11 @@ ul li a.active {
     .data-content {
         margin-top: 1em;
     }
+
+    .center {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
 }
 
 
