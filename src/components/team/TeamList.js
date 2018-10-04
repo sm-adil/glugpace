@@ -16,8 +16,7 @@ class TeamList extends Component {
           {id: '10', name: 'Hasna Akbar Ali'},
           {id: '11', name: 'Shahana Ankalgi'},
           {id: '12', name: 'Saleh Arafath'},
-          {id: '13', name: 'Anagha Premraj'},
-          {id: '14', name: 'Ramesh Raj'}
+          {id: '13', name: 'Anagha Premraj'}
       ]
   }
   render() {

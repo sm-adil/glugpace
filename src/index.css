@@ -199,6 +199,10 @@ ul li a.active {
     color: #3c4043;
 }
 
+.event-image {
+    height: 170px;
+}
+
 .event-title {
     font-size: 1.3em;
     font-weight: 400;
@@ -301,6 +305,7 @@ ul li a.active {
 }
 
 .center {
+    padding: 14em;
     text-align: center;
 }
 
@@ -346,7 +351,6 @@ ul li a.active {
 
     #hero-content p {
         color: #f1f3f5;
-        font-weight: 300;
     }
     
     .hero-heading {
@@ -382,6 +386,10 @@ ul li a.active {
     .blog-post-desc {
         font-weight: 200;
     }
+
+    .event-image {
+        height: auto;
+    }    
 
     .data-content {
         margin-top: 1em;
