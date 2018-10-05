@@ -200,7 +200,10 @@ ul li a.active {
 }
 
 .event-image {
-    height: 170px;
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-radius: 2px 2px 0 0;
 }
 
 .event-title {
@@ -320,6 +323,13 @@ ul li a.active {
     font-size: 1.8em;
     font-weight: 500;
     line-height: 1em;
+}
+
+.data-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 2px 2px 0 0;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 30em) {
