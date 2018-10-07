@@ -185,13 +185,13 @@ ul li a.active {
 .event-card {
     flex: 0 1 500px;
     box-sizing: border-box;
-    margin: 0.5em 0.25em;
+    margin: 1em 0.5em;
     background: #fff;
-    box-shadow: 0 1px 3px rgba(104, 104, 104, 0.5);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
 }
 
 .event-card:hover {
-    box-shadow: 3px 4px 10px 2px rgba(104, 104, 104, 0.3);
+    box-shadow: 3px 4px 15px 2px rgba(49, 49, 49, 0.5);
 }
 
 .event-desc {
@@ -327,7 +327,7 @@ ul li a.active {
 
 .data-image {
     width: 100%;
-    height: 300px;
+    height: 400px;  
     border-radius: 2px 2px 0 0;
     object-fit: cover;
 }
@@ -403,6 +403,10 @@ ul li a.active {
 
     .data-content {
         margin-top: 1em;
+    }
+
+    .data-image {
+        height: auto;
     }
 
     .center {

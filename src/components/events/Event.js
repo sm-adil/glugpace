@@ -11,6 +11,7 @@ const Event = ({events}) => {
                         <img className="event-image" src={require(`${event.imageURl}`)} alt="event" />
                         <div className="event-desc">
                            <p className="event-title">{event.title}</p>
+                           <p className="event-date">{event.date}</p>
                         </div>
                     </div>
                 </Link>

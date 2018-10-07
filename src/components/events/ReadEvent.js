@@ -26,6 +26,7 @@ class ReadEvent extends Component {
         <div className="data-content">
             <img className="data-image" src={require(`${this.state.event.imageURl}`)} alt="event" />
             <h4 className="data-heading">{this.state.event.title}</h4>
+            <p className="data-date">{this.state.event.date}</p>
             <p>{this.state.event.body}</p>
         </div>
       ) : (
