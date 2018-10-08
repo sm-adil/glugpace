@@ -6,7 +6,7 @@ module.exports = {
                 "title": "GITHUB 101",
                 "date": "27/10/2018",
                 "body": "The workshop will cover basics of using the Version Control System - Git and how to collaborate effectively on your projects using GitHub. Not just Git push and run but how to tackle difficult situations and how to find help. The workshop will also cover the benefits of being an open source contributor and how to be an open source contributor. We'll be introducing some exciting offers from GitHub education for students, and to use it to build your knowledge on modern technologies, and how open source can shape your career.",
-                "imageURl": "./event-images/github-session.png"
+                "imageURl": "./event-images/github-session.jpg"
             },
             {
                 "id": 2,
