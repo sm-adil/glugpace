@@ -152,7 +152,7 @@ ul li a.active {
 }
 
 .blog-card:hover {
-    box-shadow: 3px 3px 5px 2px rgba(104, 104, 104, 0.3);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
 }
 
 .blog-post-image {
@@ -191,7 +191,7 @@ ul li a.active {
 }
 
 .event-card:hover {
-    box-shadow: 3px 4px 15px 2px rgba(49, 49, 49, 0.5);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
 }
 
 .event-desc {
