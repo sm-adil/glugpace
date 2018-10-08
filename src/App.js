@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 
 import EventList from './components/events/EventList'
 import ReadEvent from './components/events/ReadEvent'
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <ScrollToTop>
         <div className="App">
         <Navbar />
           <Switch>
@@ -27,6 +29,7 @@ class App extends Component {
           </Switch>          
           <Footer />
         </div>
+        </ScrollToTop>
       </BrowserRouter>
     );
   }
