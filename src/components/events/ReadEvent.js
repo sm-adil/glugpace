@@ -27,6 +27,8 @@ class ReadEvent extends Component {
             <img className="data-image" src={require(`${this.state.event.imageURl}`)} alt="event" />
             <h2 className="data-heading">{this.state.event.title} </h2>
             <p className="data-date">Date: {this.state.event.date}</p>
+            <p className="data-venue">Venue: {this.state.event.venue}</p>
+
             {/* Used dangerouslySetInnerHTML to display html tags associated with json data */}
             <div dangerouslySetInnerHTML={{__html: this.state.event.body}} className="data-body"></div>
         </div>
