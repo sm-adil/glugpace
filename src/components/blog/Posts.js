@@ -13,7 +13,7 @@ const Posts = ({posts}) => {
                     </div>
                     <div className="blog-post-data">
                             <p className="blog-post-title">{post.title}</p>
-                        <p className="blog-post-desc">Published by {post.username}</p>
+                        <p className="blog-post-desc">Published by <b>{post.username}</b></p>
                     </div>
                 </div>
                 </Link>

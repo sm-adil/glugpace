@@ -25,8 +25,11 @@ class ReadPost extends Component {
         const post = this.state.post ? (
             <div className="data-content">
                 <img className="data-image" src={require(`${this.state.post.imageURl}`)} alt="post" />
-                <h4 className="data-heading">{this.state.post.title}</h4>
-                <p>{this.state.post.body}</p>
+                <h1 className="data-heading">{this.state.post.title}</h1>
+                <p>Published by: {this.state.post.username}</p>
+
+                {/* Used dangerouslySetInnerHTML to display html tags associated with json data */}
+                <div dangerouslySetInnerHTML={{__html: this.state.post.body}} className="data-body"></div>
             </div>
         ) : (
                 <div className="center">Loading post...</div>
