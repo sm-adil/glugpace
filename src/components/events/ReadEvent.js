@@ -25,9 +25,10 @@ class ReadEvent extends Component {
       const event = this.state.event ? (
         <div className="data-content">
             <img className="data-image" src={require(`${this.state.event.imageURl}`)} alt="event" />
-            <h2 className="data-heading">{this.state.event.title}</h2>
+            <h2 className="data-heading">{this.state.event.title} </h2>
             <p className="data-date">Date: {this.state.event.date}</p>
-            <p className="data-body">{this.state.event.body}</p>
+            {/* Used dangerouslySetInnerHTML to display html tags associated with json data */}
+            <div dangerouslySetInnerHTML={{__html: this.state.event.body}} className="data-body"></div>
         </div>
       ) : (
           <div className="center">Loading event...</div>
