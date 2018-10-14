@@ -58,11 +58,14 @@ header .container {
     margin-left: auto;
 }
 
-.navbar-links li a {
+.navbar-links .nav-link {
+    margin-top: auto;
+    margin-bottom: auto !important;
+}
+
+.navbar-links .nav-link a {
     color: #3c4043;
     white-space: nowrap;
-    margin-top: auto;
-    margin-bottom: auto;
     padding: 1.4em 1.2em;
     text-transform: uppercase;
     font-size: 0.875em;
