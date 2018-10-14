@@ -48,7 +48,7 @@ header .container {
     font-weight: 600;
 }
 
-ul {
+.navbar-links {
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -58,7 +58,7 @@ ul {
     margin-left: auto;
 }
 
-ul li a {
+.navbar-links li a {
     color: #3c4043;
     white-space: nowrap;
     margin-top: auto;

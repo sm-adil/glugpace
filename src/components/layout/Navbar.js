@@ -7,7 +7,7 @@ const Navbar = () => {
         <header>
             <div className="container">
                 <NavLink to='/glugpace/' id="logo">GLUG PACE</NavLink>
-                <ul>
+                <ul className="navbar-links">
                     <li><NavLink to='/glugpace/events'>Events</NavLink></li>
                     <li><NavLink to='/glugpace/blog'>Blog</NavLink></li>
                     <li><NavLink to='/glugpace/team'>Team</NavLink></li>
