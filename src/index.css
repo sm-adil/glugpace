@@ -243,8 +243,18 @@ ul li a.active {
     border-radius: 50%;
 }
 
-.member-name {
+.member-data {
     padding: 0 1em;
+}
+
+.member-name {
+    margin: 0;
+}
+
+.member-role {
+    font-size: 0.89em;
+    margin: 10px 0 0;
+    color: #727171;
 }
 
 @media screen and (min-width: 40em) {
