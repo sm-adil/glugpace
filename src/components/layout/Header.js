@@ -19,7 +19,7 @@ const Header = () => {
         <section id="section-two">
             <div className="container">
                 <div className="box">
-                    <p className="hero-heading">What is the purpose of a GLUG?</p>
+                    <h1 className="hero-heading">What is the purpose of a GLUG?</h1>
                     <p>The purpose of a GLUG is to equip students with FOSS and make them understand how FOSS is developed and why is it done so. While doing that - how one can contribute back to FOSS. And get them adapted to "critical thinking".</p>
                 </div>
                 <div className="box">
@@ -34,7 +34,7 @@ const Header = () => {
                     <img src={ students } alt="BOX" />
                 </div>
                 <div className="box">
-                    <p className="hero-heading">Be a part of the FSMK team!</p>
+                    <h1 className="hero-heading">Be a part of the FSMK team!</h1>
                     <p>Free Software Movement Karnataka is a registered not-for-profit organization. Our primary objective is to create and spread awareness of Free Software technologies in different strata of society. We are driven by volunteers, who by day are software engineers, students, academicians, or government officials, and by night are Free Software evangelists.</p>
                 </div>
             </div>
