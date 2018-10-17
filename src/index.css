@@ -226,7 +226,7 @@ ul li a.active {
     box-sizing: border-box;
     margin: 0.5em 0.25em;
     background: #fff;
-    box-shadow: 0 1px 3px rgba(52, 52, 52, 0.5);
+    box-shadow: 0 1px 3px rgba(209, 125, 125, 0.5);
 }
 
 .member-card:hover {
@@ -240,6 +240,7 @@ ul li a.active {
 
 .member-image {
     max-width: 80px;
+    border-radius: 50%;
 }
 
 .member-name {
