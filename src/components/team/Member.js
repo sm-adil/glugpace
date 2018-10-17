@@ -8,6 +8,7 @@ const Member = ({members}) => {
             <div className="member-details">
                 <img className="member-image" src={`https://avatars1.githubusercontent.com/${member.username}?size=100`} alt="member" />
                 <p className="member-name">{member.name}</p>
+                <p className="member-role">{member.role}</p>
             </div>
         </div>
       )
