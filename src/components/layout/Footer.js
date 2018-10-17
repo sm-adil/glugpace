@@ -11,7 +11,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-box">
                     <h1>Open Source Community</h1>
-                    <p><a href="https://github.com">GitHub</a></p>
+                    <p><a href="https://github.com/elmentrix/glugpace/" target="blank">GitHub</a></p>
                 </div>
                 <div className="footer-box">
                     <h1>P A College of Engineering</h1>
