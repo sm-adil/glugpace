@@ -223,6 +223,8 @@ ul li a.active {
 .team-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1em;
 }
 
 .member-card {
@@ -230,7 +232,7 @@ ul li a.active {
     box-sizing: border-box;
     margin: 0.5em 0.25em;
     background: #fff;
-    box-shadow: 0 1px 3px rgba(209, 125, 125, 0.5);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
 }
 
 .member-card:hover {
@@ -361,7 +363,7 @@ ul li {
 
 @media screen and (max-width: 30em) {
     header {
-        height: 105px;
+        height: 104px;
     }
 
     .container {
@@ -442,9 +444,14 @@ ul li {
     }
 }
 
-
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 35em) {
     header {
-        height: min-content;
+        height: 104px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 35em) {
+    header {
+        height: 104px;
     }
 }
