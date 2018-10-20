@@ -56,6 +56,7 @@ module.exports = {
                 "date": "27-10-2018",
                 "venue": "Unix Lab / Project Lab",
                 "body": "<p>The workshop will cover basics of using the Version Control System - Git and how to collaborate effectively on your projects using GitHub. Not just Git push and run but how to tackle difficult situations and how to find help. The workshop will also cover the benefits of being an open source contributor and how to be an open source contributor. We'll be introducing some exciting offers from GitHub education for students, and to use it to build your knowledge on modern technologies, and how open source can shape your career.</p>" +
+                        "<h3>Note: Bring your own laptops💻!</h3>" +
                         "<b>This is a Free community driven workshop 💯</b>" + 
                         "<h2>Topics to be covered</h2>" +
                         "<ul><li>What is Git & Why Use Git</li> <li>Installing Git</li> <li>How Git Works</li> <li>Creating a Repository</li> <li>Staging Files</li> <li>Making Commit</li> <li>Undoing Things</li> <li>Branches</li> <li>Merging Branches</li> <li>Introduction to GitHub</li> <li>Collaborating on GitHub</li> <li> Forking (& Contributing)</li> <li>Introduction to GitHub Pages</li></ul>" + 

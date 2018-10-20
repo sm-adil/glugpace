@@ -6,7 +6,7 @@ const Posts = ({posts}) => {
     posts.map(post => {
         return (
             <div key={post.id}>
-                <Link to={'/glugpace/blog/' + post.id}>
+                <Link to={'/glugpace/blog/' + post.title.replace(/\s+/g, '-').toLowerCase()}>
                 <div className="blog-card" >
                     <div className="blog-post-image">
                         <img src={require(`${post.imageURl}`)} alt="post" />

@@ -6,7 +6,7 @@ const Event = ({events}) => {
     events.map(event => {
         return (
             <div className="event-card" key={event.id}>
-                <Link to={'/glugpace/events/' + event.id}>                
+                <Link to={'/glugpace/events/' + event.title.replace(/\s+/g, '-').toLowerCase()}>                
                     <div className="event-details">
                         <img className="event-image" src={require(`${event.imageURl}`)} alt="event" />
                         <div className="event-desc">

@@ -8,10 +8,10 @@ class ReadPost extends Component {
 
     componentDidMount() {
         // Get the post id from route   
-        let post_id = Number(this.props.match.params.post_id);
+        let post_title = this.props.match.params.post_id;
         let selectedPost;
         posts.forEach(post => {
-            if (post.id === post_id) {
+            if (post.title.replace(/\s+/g, '-').toLowerCase() === post_title) {
                 selectedPost = post;
             }
         });
@@ -26,7 +26,7 @@ class ReadPost extends Component {
             <div className="data-content">
                 <img className="data-image" src={require(`${this.state.post.imageURl}`)} alt="post" />
                 <h1 className="data-heading">{this.state.post.title}</h1>
-                <p>Published by: {this.state.post.username}</p>
+                <p>Published by <b>{this.state.post.username}</b></p>
 
                 {/* Used dangerouslySetInnerHTML to display html tags associated with json data */}
                 <div dangerouslySetInnerHTML={{__html: this.state.post.body}} className="data-body"></div>

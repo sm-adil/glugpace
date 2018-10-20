@@ -3,7 +3,7 @@ module.exports = {
         [
             {
                 "id": 1,
-                "title": "What is Git / Version control System?",
+                "title": "What is Git (Version control System)!",
                 "username": "Sheik Mohammed Adil",
                 "body": "<p>Git is a version-control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source-code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision-control system, it is aimed at speed, data integrity, and support for distributed, non-linear workflows. There are multiple Version Control Systems, but Git is by far and large the most popular both for individual and company use.</p>" +
                         "<p>Git was created by Linus Torvalds😇 in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.</p>" +

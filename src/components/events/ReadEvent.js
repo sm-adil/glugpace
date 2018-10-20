@@ -6,12 +6,12 @@ class ReadEvent extends Component {
     event: null
   }
 
-  componentDidMount() {
-      // Get the event id from route   
-      let event_id = Number(this.props.match.params.event_id);
-      let selectedEvent;
+    componentDidMount() {
+        // Get the event id/title from route   
+        let event_title = this.props.match.params.event_id;
+        let selectedEvent;
         events.forEach(event => {
-            if (event.id === event_id) {
+            if (event.title.replace(/\s+/g, '-').toLowerCase() === event_title) {
                 selectedEvent = event;
             }
         });
@@ -20,7 +20,7 @@ class ReadEvent extends Component {
                 event:selectedEvent
             })
         )
-  }
+    }
   render() {
       const event = this.state.event ? (
         <div className="data-content">
