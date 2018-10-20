@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Event = ({events}) => {
   const eventList = events.length ? (
-    events.reverse().map(event => {
+    events.map(event => {
         return (
             <div className="event-card" key={event.id}>
                 <Link to={'/glugpace/events/' + event.id}>                
