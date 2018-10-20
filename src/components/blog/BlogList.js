@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Posts from './Posts';
 
-const posts = require('./PostFile').posts;
+const posts = require('./PostFile').posts.reverse();
 
 class BlogList extends Component {
   state = {

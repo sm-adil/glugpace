@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Event from './Event'
 
-const events = require('./EventFile').events;
+const events = require('./EventFile').events.reverse();
 
 class EventList extends Component {
   state = {
