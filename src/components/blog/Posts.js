@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Posts = ({posts}) => {
   const postList = posts.length ? (
-    posts.reverse().map(post => {
+    posts.map(post => {
         return (
             <div key={post.id}>
                 <Link to={'/glugpace/blog/' + post.id}>
