@@ -12,7 +12,7 @@ Find out more information at [glugpace](https://elmentrix.github.io/glugpace/).
 ## Getting Started
 In order to get started developing, you'll need to do a few things first.
 
-1. Make sure you have installed node and git in your system, clone this repository and cd to that folder.
+1. Make sure you have installed [node](https://www.nodegit.org/) and [git](https://git-scm.com/downloads) in your system, clone this repository and cd to that folder.
 
 ```
 git clone https://github.com/elmentrix/glugpace.git
