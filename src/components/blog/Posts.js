@@ -6,17 +6,19 @@ const Posts = ({posts}) => {
     posts.map(post => {
         return (
             <div key={post.id}>
-                <Link to={'/glugpace/blog/' + post.title.replace(/\s+/g, '-').toLowerCase()}>
                 <div className="blog-card" >
                     <div className="blog-post-image">
-                        <img src={require(`${post.imageURl}`)} alt="post" />
+                        <Link to={'/glugpace/blog/' + post.title.replace(/\s+/g, '-').toLowerCase()}>
+                            <img src={require(`${post.imageURl}`)} alt="post" />
+                        </Link>
                     </div>
                     <div className="blog-post-data">
-                            <p className="blog-post-title">{post.title}</p>
+                        <h2 className="blog-post-title">
+                            <Link to={'/glugpace/blog/' + post.title.replace(/\s+/g, '-').toLowerCase()}>{post.title}</Link>
+                        </h2>
                         <p className="blog-post-desc">Published by <b>{post.username}</b></p>
                     </div>
                 </div>
-                </Link>
             </div>
         )
     })

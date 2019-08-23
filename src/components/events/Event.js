@@ -5,17 +5,19 @@ const Event = ({events}) => {
   const eventList = events.length ? (
     events.map(event => {
         return (
-            <div className="event-card" key={event.id}>
-                <Link to={'/glugpace/events/' + event.title.replace(/\s+/g, '-').toLowerCase()}>                
-                    <div className="event-details">
-                        <img className="event-image" src={require(`${event.imageURl}`)} alt="event" />
-                        <div className="event-desc">
-                           <p className="event-title">{event.title}</p>
-                           <p className="event-date">{event.date}</p>
-                        </div>
-                    </div>
-                </Link>
+          <div className="event-card" key={event.id}>
+            <div className="event-details">
+              <Link to={'/glugpace/events/' + event.title.replace(/\s+/g, '-').toLowerCase()}>
+                <img className="event-image" src={require(`${event.imageURl}`)} alt="event" />
+              </Link>
+              <div className="event-desc">
+                <h2 className="event-title">
+                  <Link to={'/glugpace/events/' + event.title.replace(/\s+/g, '-').toLowerCase()}>{event.title}</Link>
+                </h2>
+                <p className="event-date">{event.date}</p>
+              </div>
             </div>
+          </div>
         )
     })
   ) : (
