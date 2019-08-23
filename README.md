@@ -15,7 +15,7 @@ In order to get started developing, you'll need to do a few things first.
 1. Make sure you have installed [node](https://www.nodegit.org/) and [git](https://git-scm.com/downloads) in your system, clone this repository and cd to that folder.
 
 ```
-git clone https://github.com/elmentrix/glugpace.git
+git clone https://github.com/mohammed-adil/glugpace.git
 ```
 2. Install all of the `node_modules` required for the package. Depending on your computer's configuration, you may need to prefix this command with a `sudo`.
 
